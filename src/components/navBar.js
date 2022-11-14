@@ -52,7 +52,7 @@ export const NavBar = () => {
                     <a href="#"><img src={navIcon3} alt="" /></a>
                 </div>
                 <button className="vvd" onClick={() => console.log('conect')}>
-                    <span>Contáctame</span>
+                    <span>Contacto</span>
                 </button>
             </span>
         </Navbar.Collapse>
