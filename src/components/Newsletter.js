@@ -1,6 +1,6 @@
 import {Alert, Row, Col} from "react-bootstrap";
 import { useState, useEffect } from "react";
-import e from "express";
+
 
 
 export const Newsletter = ({ onValidated, status, message }) =>{
@@ -9,7 +9,7 @@ export const Newsletter = ({ onValidated, status, message }) =>{
     useEffect (() =>{
         if (status === 'success') clearFields();
 
-    },status)
+    },[status])
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -26,7 +26,7 @@ export const Newsletter = ({ onValidated, status, message }) =>{
 
     return (
         <Col lg={12}>
-            <div className="newsletter-bx">
+            <div className="newsletter-bx wow slideInUp">
                 <Row>
                     <Col lg={12} md="6" xl={5}>
                         <h3>Subscribe to our Newsletter</h3>
@@ -37,8 +37,8 @@ export const Newsletter = ({ onValidated, status, message }) =>{
                     <Col md={6} xl={7}>
                         <form onSubmit={handleSubmit}>
                             <div className="new-email-bx">
-                                <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Adres"/>
-                                <button type='submit'>submit</button>
+                                <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Ingresa tu correo"/>
+                                <button type='submit'>envíar</button>
                             </div>
 
                         </form>

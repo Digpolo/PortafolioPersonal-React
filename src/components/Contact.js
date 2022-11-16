@@ -1,15 +1,15 @@
 import { useState } from "react"
-import { Container, Row } from "react-bootstrap";
-import contacImg from "../assets/img/Contac-img.svg";
+import { Container, Row, Col } from "react-bootstrap";
+import contacImg from "../assets/img/contac-img.svg";
 
-export const Contac = () => { 
-    const formInitialDetails ={
-        firsName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
-    }    
+export const Contact = () => {
+    const formInitialDetails = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      message: ''
+    } 
     
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState('send');
