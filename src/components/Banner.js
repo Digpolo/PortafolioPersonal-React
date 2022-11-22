@@ -52,7 +52,7 @@ export const Banner = () => {
                     <TrackVisibility>
                     {({ isVisible}) => 
                     <div className={isVisible ? 'animate__animated animate__bounce' : ''}>
-                        <span className="tagline">Welcome to my Portfolio</span>
+                        {/* <span className="tagline">Welcome to my Portfolio</span> */}
                         <h1>{'Hi I m webdecoded'}<span className="wrap">{text}</span></h1>
                         <p>lorem ipsu is simply text of ther priting and typesetting isdustri</p>
                         <button onClick={() => console.log('connect')}>Contacto<ArrowRightCircle size={25}/></button>
