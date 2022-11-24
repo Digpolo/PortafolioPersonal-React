@@ -5,6 +5,8 @@ import meter1 from '../assets/img/meter1.svg';
 import meter2 from '../assets/img/meter2.svg';
 import meter3 from '../assets/img/meter3.svg';
 import colorSharp from '../assets/img/color-sharp.png'
+import caso from '../assets/img/caso.svg';
+
 
 export const Skills = () => {
     const responsive = {
@@ -34,31 +36,27 @@ export const Skills = () => {
                     <Col>
                     <div className="skill-bx">
                         <h2>
-                            Skills
+                            Historias de transformación
                         </h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt='Image'/>
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt='Image'/>
-                                <h5>UI/UX Designer</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt='Image'/>
-                                <h5>Web Developer</h5>
-                            </div>
-                        </Carousel>
+                        <p>La innovación es el motor para potenciar las industrias</p>                                              
                     </div>
+                    <div className="comp">
+                      <div className="casoExito">
+                        <h3>Caso de éxito</h3>
+                        <p>Cliente: Expresión Clinica Odontólogica</p>
+                        <p>Con el unico objetivo de convertir los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
+                        <button onClick={() => console.log('connect')}>Leer caso de estudio</button>
+                      </div>
+                      <img src={caso} alt="caso" />
+                        
+                      
+                    </div>
+                    
+                    
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
+            
         </section>
       )
 }

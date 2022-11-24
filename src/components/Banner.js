@@ -1,59 +1,90 @@
 
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from '../assets/img/header-img.svg';
+
+
+import html from '../assets/img/html.svg';
+import css from '../assets/img/css.svg';
+import javascritp from '../assets/img/javascript.svg';
+import react from '../assets/img/react.svg';
+import mysql from '../assets/img/mysql.svg';
+import figma from '../assets/img/figma.svg';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer '];
+    //const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     const period = 2000;
 
-    useEffect (() =>{
-        let ticker = setInterval (() =>{
-            tick();
-        },delta )
+    // useEffect (() =>{
+    //     let ticker = setInterval (() =>{
+    //         tick();
+    //     },delta )
 
-        return () => { clearInterval(ticker)};
-    },[text])
+    //     return () => { clearInterval(ticker)};
+    // },[text])
 
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    // const tick = () => {
+    //     let i = loopNum % toRotate.length;
+    //     let fullText = toRotate[i];
+    //     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
-        setText(updatedText);
+    //     setText(updatedText);
 
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta /2)
-        }
+    //     if (isDeleting) {
+    //         setDelta(prevDelta => prevDelta /2)
+    //     }
 
-        if(!isDeleting && updatedText === fullText){
-            setIsDeleting(true);
-            setDelta(period);
-        } else if(isDeleting && updatedText ==='') {
-            setIsDeleting(false);
-            setLoopNum (loopNum + 1);
-            setDelta(500);
+    //     if(!isDeleting && updatedText === fullText){
+    //         setIsDeleting(true);
+    //         setDelta(period);
+    //     } else if(isDeleting && updatedText ==='') {
+    //         setIsDeleting(false);
+    //         setLoopNum (loopNum + 1);
+    //         setDelta(500);
 
-        }
-    }
+    //     }
+    // }
 
     return( 
         <section className='banner' id='home'>
             <Container>
                 <Row className="align- items-center">
                     <Col xs={12} md={6} xl={7}>
-                    <span className="tagline">Welcome to my Portfolio</span>
-                    <h1>{'Hi I m webdecoded'}<span className="wrap">{text}</span></h1>
-                    <p>lorem ipsu is simply text of ther priting and typesetting isdustri</p>
-                    <button onClick={() => console.log('connect')}>Contacto<ArrowRightCircle size={25}/></button>
+                    
+                    <h1>{'Diego Polo '}<span className="wrap">{text}</span></h1>
+                    <p>Soy desarrollador de software con especialidad en front-end y diseñador UX-UI</p>
+                    <button onClick={() => console.log('connect')}>Contacto</button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src= {headerImg} alt="Headder Img"/>
+                        <ul className="habilidades">
+                            <div className="habilidadesCaja"> 
+                                <img src={html} alt="html" />
+                                <dt className="habilidadesText">HTML</dt>
+                            </div>
+                            <div className="habilidadesCaja">
+                                <img src={css} alt="csss" />
+                                <dt className="habilidadesText">CSS</dt>
+                            </div>
+                            <div className="habilidadesCaja">
+                                <img src={javascritp} alt="javascript" />
+                                <dt className="habilidadesText">JavaScript</dt>
+                            </div>
+                            <div className="habilidadesCaja">
+                                <img src={react} alt="react" />
+                                <dt className="habilidadesText">React</dt>
+                            </div>
+                            <div className="habilidadesCaja">
+                                <img src={mysql} alt="mysql" />
+                                <dt className="habilidadesText">MySQL</dt>
+                            </div>
+                            <div className="habilidadesCaja">
+                                <img src={figma} alt="figma" />
+                                <dt className="habilidadesText">Figma</dt>
+                            </div>
+                        </ul>
                      </Col>
                 </Row>
             </Container>

@@ -1,5 +1,5 @@
 /************ Custom Font ************/
-@font-face {
+/* @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
 	font-weight: 700;
@@ -13,7 +13,7 @@
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
-}
+} */
 
 /************ Default Css ************/
 * {
@@ -213,10 +213,49 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /************ Banner Css ************/
+
+.habilidades {
+  background-color: #E9E9E9;
+  margin: 2px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.habilidadesCaja{
+  
+  
+  width: 160px;
+  padding: 1px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+
+}
+.habilidadesText{
+  color: #000;
+  font-family: inter;
+  font-size: 15px;
+  margin: 5px;
+}
+.banner img {
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
 .banner {
   margin-top: 0;
+  margin-bottom: 2s00px;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/banner-bg.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -247,13 +286,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: #fff;
   font-weight: 700;
-  font-size: 20px;
-  margin-top: 60px;
-  letter-spacing: 0.8px;
-  display: flex;
-  align-items: center;
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 62em;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+	position: relative;
+	transition: 0.3s ease-in-out;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
 }
 .banner button svg {
   font-size: 25px;
@@ -264,9 +308,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-}
+
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -286,20 +329,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-color: #fff;
 }
 .skill-bx {
-  background: #151515;
-  border-radius: 64px;
+ 
+  
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 20px 30px;
+  margin-top: 60px;
 }
+
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
+  color: #000;
 }
 .skill p {
-    color: #B8B8B8;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -320,6 +366,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+
+.comp {
+  display: flex;
+  margin-top: 10px;
+}
+
+.casoExito{
+  padding-right: 100px;
+  margin-right: 50px;
+
+}
+
+.skill h3{
+  color: #000
+}
+
+.skill img{
+  width: 600px;
+  height: 400px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+.skill button {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  padding: 10px 50px;
+  border-radius: 62em;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+	position: relative;
+	transition: 0.3s ease-in-out;
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
 }
 
 /************ Projects Css ************/
