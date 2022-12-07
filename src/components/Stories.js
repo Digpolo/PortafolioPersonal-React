@@ -8,7 +8,7 @@ import colorSharp from '../assets/img/color-sharp.png'
 import caso from '../assets/img/caso.svg';
 
 
-export const Skills = () => {
+export const Stories = () => {
     const responsive = {
         superLargeDesktop: {
           // the naming can be any, depends on you.
@@ -44,10 +44,10 @@ export const Skills = () => {
                       <div className="casoExito">
                         <h3>Caso de éxito</h3>
                         <p>Cliente: Expresión Clinica Odontólogica</p>
-                        <p>Con el unico objetivo de convertir los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
+                        <p>Con el unico objetivo de convertir a los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
                         <button onClick={() => console.log('connect')}>Leer caso de estudio</button>
                       </div>
-                      <img src={caso} alt="caso" />
+                      <img xs={12} md={6} xl={5} src={caso} alt="caso" />
                         
                       
                     </div>

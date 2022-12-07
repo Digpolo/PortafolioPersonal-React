@@ -55,7 +55,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                     
                     <h1>{'Diego Polo '}<span className="wrap">{text}</span></h1>
-                    <p>Soy desarrollador de software con especialidad en front-end y diseñador UX-UI</p>
+                    <p>Desarrollador de software con especialidad en front-end y diseñador UX-UI</p>
                     <button onClick={() => console.log('connect')}>Contacto</button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
