@@ -6,7 +6,7 @@ import { NavBar } from './components/navBar';
 import { Banner} from './components/Banner';
 import { Stories } from './components/Stories';
 import { Projects } from './components/Projects';
-import { Contactdp } from './components/contactodp/contactdp';
+import { Contactdp } from './components/contactdp';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

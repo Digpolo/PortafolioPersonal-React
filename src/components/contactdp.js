@@ -1,6 +1,9 @@
-import { useForm } from "../hooks/useForm"
-import Loader from "../Loader";
-import Message from "../Message";
+import { useForm } from "./hooks/useForm"
+import csscontact from "./csscontact.css"
+import Message from "./Message";
+import logo from '../assets/img/logo.svg';
+import Loader from "./Loader";
+
 
 const initialForm={
     name: "",
@@ -47,13 +50,12 @@ export const  Contactdp = () => {
     return(
     <section className="contactdp">
         
-        <div>
+        
+
+        <img src={logo} alt="Logo"/>
 
 
 
-
-
-            
         <form onSubmit={handleSubmit} className="formulario">
             <h1 className="titleForm" >Te contacto</h1>
             
@@ -81,7 +83,7 @@ export const  Contactdp = () => {
         {response &&(
         <Message msg="Los datos han sido enviados"bgColor="#198754"/>
         )}
-        </div>
+        
      </section>
     
     
