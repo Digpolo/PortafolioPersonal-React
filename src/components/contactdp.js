@@ -1,8 +1,9 @@
 import { useForm } from "./hooks/useForm"
 import csscontact from "./csscontact.css"
 import Message from "./Message";
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/logoSolo.svg';
 import Loader from "./Loader";
+import { Container, Row, Col } from "react-bootstrap";
 
 
 const initialForm={
@@ -49,40 +50,46 @@ export const  Contactdp = () => {
 
     return(
     <section className="contactdp">
-        
-        
+        <Container>
+            <Row className="align- items-center">
+                <Col xs={12} md={6} xl={7} >
+                
 
-        <img src={logo} alt="Logo"/>
+                    <img src={logo} alt="Logo" className="imglogo"/>
 
+                </Col>
+                <Col xs={12} md={6} xl={5}>
 
+                    <form onSubmit={handleSubmit} className="formulario">
+                        <h1 className="titleForm" >Te contacto</h1>
+                        
+                    <input type="text" className="formularioInput" placeholder="Nombre" name="name" id="name" 
+                        onBlur={handleBlur} 
+                        onChange={handleChange}
+                        value={form.name} 
+                        required/>
 
-        <form onSubmit={handleSubmit} className="formulario">
-            <h1 className="titleForm" >Te contacto</h1>
-            
-           <input type="text" className="formularioInput" placeholder="Nombre" name="name" id="name" 
-            onBlur={handleBlur} 
-            onChange={handleChange}
-            value={form.name} 
-            required/>
+                    {errors.name && <p className="errors">{errors.name}</p>}
+                    
+                        <input type="email" className="formularioInput" placeholder="Correo electrónico" name="email" id="email" 
+                        onBlur={handleBlur} 
+                        onChange={handleChange}
+                        value={form.email} 
+                        required/>
+                        {errors.email && <p className="errors">{errors.email}</p>}
+                        
+                        <input type="submit" className="formularioSubmit"
+                        value="Enviar"/>
+                        
+                    </form>
+                    {loading&&<Loader/>}
 
-           {errors.name && <p className="errors">{errors.name}</p>}
-           
-            <input type="email" className="formularioInput" placeholder="Correo electrónico" name="email" id="email" 
-            onBlur={handleBlur} 
-            onChange={handleChange}
-            value={form.email} 
-            required/>
-            {errors.email && <p className="errors">{errors.email}</p>}
-            
-            <input type="submit" className="formularioSubmit"
-            value="Enviar"/>
-            
-        </form>
-        {loading&&<Loader/>}
-
-        {response &&(
-        <Message msg="Los datos han sido enviados"bgColor="#198754"/>
-        )}
+                    {response &&(
+                    <Message msg="Los datos han sido enviados"bgColor="#198754"/>
+                    )}
+                </Col>       
+            </Row>
+        </Container>
         
      </section>
     

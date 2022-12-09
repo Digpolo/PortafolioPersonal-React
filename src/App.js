@@ -7,6 +7,7 @@ import { Banner} from './components/Banner';
 import { Stories } from './components/Stories';
 import { Projects } from './components/Projects';
 import { Contactdp } from './components/contactdp';
+import { Footer } from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,6 +20,7 @@ function App() {
       <Stories/>
       <Projects/> 
       <Contactdp/>
+      <Footer/>
     </div>
   ); 
 }

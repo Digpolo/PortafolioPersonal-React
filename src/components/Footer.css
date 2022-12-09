@@ -1,0 +1,41 @@
+  .footer {
+    margin-top: 0;
+    margin-bottom: 2s00px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: black;
+    display: flex;  
+  }
+  .footer p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #B8B8B8;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    
+  }
+  .footerimg {
+    max-height: 100px;
+    max-width: 100px;
+   
+  }
+ 
+  .footer ul {
+    font-weight: 400;
+    font-size: 14px;
+    color: #B8B8B8;
+    margin-top:  20px;
+  }
+
+  .proj-imgbx {
+    position: relative;
+    border-radius: 0px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+
+
+    
+
+   
