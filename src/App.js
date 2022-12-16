@@ -4,9 +4,9 @@ import './App.css';
 
 import { NavBar } from './components/navBar';
 import { Banner} from './components/Banner';
-import { Stories } from './components/Stories';
 import { Projects } from './components/Projects';
-import { Contactdp } from './components/contactdp';
+import { Projectsm } from './components/Projectsm';
+import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,9 +17,9 @@ function App() {
     <div>
       <NavBar/>
       <Banner/>
-      <Stories/>
-      <Projects/> 
-      <Contactdp/>
+      <Projects/>
+      <Projectsm/>
+      <Contact/>
       <Footer/>
     </div>
   ); 

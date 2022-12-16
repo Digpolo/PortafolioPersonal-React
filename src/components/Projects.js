@@ -1,91 +1,54 @@
-import { Col, Container, Tab, Row, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
-import logo from "../assets/img/logo.svg"
-//import 'animate.css';
-//import TrackVisibility from 'react-on-screen';
-
-
+import { Container, Col, Row } from "react-bootstrap";
+import 'react-multi-carousel/lib/styles.css';
+import caso from '../assets/img/caso.svg';
+import "./Projects.css";
 
 
 export const Projects = () => {
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
 
-    
-    
-    return (
-        <section className="project" id='project'>
+      return(
+        <section className="skill" id="skills">
             <Container>
                 <Row>
-                    <Col> 
-                        <div className="titulo">
-                          <h3>Potenciamos a estas compañias</h3>
-                        </div>
-                          
-                          <div className="subtitulo">
-                          <p >Con el  objetivo de dar soluciones reales mediante el software</p>
-                          </div>
-                        
-                        <div className="cardsContainer">
-                          <div className="cards">
-                            <h4>Desarrollo de software 
-                              Diseño UX/UI</h4>
-                            <img src={logo} alt="caso" />
-                            <div className="linea"/>
-                            <p className="classp">Expresión es una landign page convertir los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
-                          </div>
-                          <div className="cards">
-                            <h4>Desarrollo de software
-                              Diseño UX/UI</h4>
-                            <img src={logo} alt="caso" />
-                            <div className="linea"/>
-                            <p className="classp">Expresión es una landign page convertir los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
-                          </div>
-                          <div className="cards">
-                            <h4>Desarrollo de software
-                              Diseño UX/UI</h4>
-                            <img src={logo} alt="caso" />
-                            <div className="linea"/>
-                            <p className="classp">Expresión es una landign page convertir los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
-                          </div>
+                    <div className="skill-bx">
+                        <h2>Proyectos</h2>
+                        <p>La innovación es el motor para potenciar las industrias</p>                                              
+                    </div>
+                    <Col xs={12} md={6} xl={7}>
+                    <div className="comp">
+                      <div className="casoExito">
+                        <h3>Caso de éxito</h3>
+                        <p>Cliente: Expresión Clinica Odontólogica</p>
+                        <p>Con el unico objetivo de convertir a los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
+                        <button onClick={() => console.log('connect')}>Leer caso de estudio</button>
+                      </div>
+                    </div>
+                  </Col>
 
-                        </div>
-                        
-                        {/* <Tab.Container id="projects-tabs" defaultActiveKey="first">
-
-                        
-                         <Tab.Content>
-                          <Tab.Pane eventKey="first">
-                            <Row>
-                                {
-                                projects.map((project, index) => {
-                                    return (
-                                    <ProjectCard
-                                        key={index}
-                                        {...project}
-                                        />
-                                    )
-                                })
-                                }
-                            </Row>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="section">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="third">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                            </Tab.Pane>
-                         </Tab.Content>
-                        </Tab.Container> */}
-                    </Col>
-                        
-                    
+                  <Col xs={12} md={6} xl={5}>
+                    <img src={caso} alt="caso" className="imglogo" />
+                  </Col>    
                 </Row>
-            </Container>
-           
+            </Container>        
         </section>
-
-    )
+      )
 }
