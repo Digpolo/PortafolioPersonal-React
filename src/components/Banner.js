@@ -9,6 +9,7 @@ import javascritp from '../assets/img/javascript.svg';
 import react from '../assets/img/react.svg';
 import mysql from '../assets/img/mysql.svg';
 import figma from '../assets/img/figma.svg';
+import "./Banner.css";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);

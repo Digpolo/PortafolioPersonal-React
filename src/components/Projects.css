@@ -1,29 +1,50 @@
 /************ Skills Css ************/
-.skill {
+
+ .projects {
     padding: 0 0 50px 0;
     position: relative;
     background-color: #fff;
   }
-  .skill-bx {
+  .projects-bx {
    
     
     text-align: center;
     padding: 20px 30px;
     margin-top: 60px;
   }
-  
-  .skill h2 {
+  .projects h2 {
       font-size: 45px;
       font-weight: 700;
     color: #000;
   }
-  .skill p {
+  .projects h3{
+    color: #000
+  }
+  .projects p {
       color: rgb(0, 0, 0);
       font-size: 18px;
       letter-spacing: 0.8px;
       line-height: 1.5em;
       margin: 14px 0 75px 0;
   }
+  .comp {
+    display: flex;
+    margin-top: 10px;
+  }
+  .case{
+    padding-right: 100px;
+    margin-right: 50px;
+  
+  }
+  .projects img{
+    margin-top: 40px;
+    
+    
+  }
+
+  
+  
+  /*
   .skill-slider {
     width: 80%;
     margin: 0 auto;
@@ -41,29 +62,6 @@
     z-index: -4;
   }
   
-  
-  .comp {
-    display: flex;
-    margin-top: 10px;
-  }
-  
-  .casoExito{
-    padding-right: 100px;
-    margin-right: 50px;
-  
-  }
-  
-  .skill h3{
-    color: #000
-  }
-  
-  .skill img{
-    width: 600px;
-    height: 400px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  
-  }
   .skill button {
     font-weight: 700;
     color: rgb(0, 0, 0);
@@ -77,5 +75,5 @@
     border-color: #000000;
     border-width: 2px;
     border-style: solid;
-  }
+  } */
   

@@ -2,7 +2,7 @@
 import './App.css';
 
 
-import { NavBar } from './components/navBar';
+import { NavBar } from './components/NavBar';
 import { Banner} from './components/Banner';
 import { Projects } from './components/Projects';
 import { Projectsm } from './components/Projectsm';

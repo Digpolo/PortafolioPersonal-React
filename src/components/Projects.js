@@ -26,16 +26,16 @@ export const Projects = () => {
       };
 
       return(
-        <section className="skill" id="skills">
+        <section className="projects" id="skills">
             <Container>
                 <Row>
-                    <div className="skill-bx">
+                    <div className="projects-bx">
                         <h2>Proyectos</h2>
                         <p>La innovación es el motor para potenciar las industrias</p>                                              
                     </div>
                     <Col xs={12} md={6} xl={7}>
                     <div className="comp">
-                      <div className="casoExito">
+                      <div className="case">
                         <h3>Caso de éxito</h3>
                         <p>Cliente: Expresión Clinica Odontólogica</p>
                         <p>Con el unico objetivo de convertir a los visitantes en Leads o prospectos de ventas por medio de la landing page </p>
@@ -45,7 +45,7 @@ export const Projects = () => {
                   </Col>
 
                   <Col xs={12} md={6} xl={5}>
-                    <img src={caso} alt="caso" className="imglogo" />
+                    <img src={caso} alt="caso" />
                   </Col>    
                 </Row>
             </Container>        
